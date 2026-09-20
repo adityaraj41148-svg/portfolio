@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kumar | BCA Student & Aspiring Software Developer</title>
+    
+    <!-- Meta Descriptions & SEO -->
+    <meta name="description" content="Professional portfolio of Aditya Kumar, a BCA student and aspiring software developer showcasing projects, technical skills, education, and professional interests.">
+    <meta name="keywords" content="Aditya Kumar, BCA Student, Aspiring Software Developer, Web Developer, Portfolio, C++, JavaScript, React, Amritsar Group of Colleges">
+    <meta name="author" content="Aditya Kumar">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Aditya Kumar | BCA Student & Aspiring Software Developer">
+    <meta property="og:description" content="Explore Aditya Kumar's projects, skills, education, and professional journey in software and web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adityakumar.dev">
+    <meta property="og:image" content="assets/images/aditya-kumar.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50%' y='68%' font-size='55' font-weight='bold' text-anchor='middle' fill='white' font-family='sans-serif'>A</text></svg>">
+
+    <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="navLogo">
+                <span class="logo-symbol">&lt;/&gt;</span>
+                <span class="logo-text">ADITYA</span>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" id="nav-home">Home</a>
+                <a href="#about" class="nav-link" id="nav-about">About</a>
+                <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+                <a href="#education" class="nav-link" id="nav-education">Education</a>
+                <a href="#certifications" class="nav-link" id="nav-certifications">Certifications</a>
+                <a href="#responsibilities" class="nav-link" id="nav-responsibilities">Activities</a>
+                <a href="#resume" class="nav-link" id="nav-resume">Resume</a>
+                <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Dark / Light Theme Toggle -->
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme" title="Switch Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+
+                <!-- Mobile Hamburger Button -->
+                <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 3. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-avatar-header">
+                        <img src="assets/images/aditya-kumar.jpg" alt="Aditya Kumar Profile" class="hero-avatar-thumb">
+                        <div class="hero-badge">
+                            <span class="pulse-dot"></span> Available for Internships &amp; Projects
+                        </div>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Aditya Kumar</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        BCA Student <span class="divider-slash">|</span> Aspiring Software Developer <span class="divider-slash">|</span> Tech Enthusiast
+                    </h2>
+                    <p class="hero-description">
+                        Passionate about building modern web applications, learning new technologies, and solving real-world problems through technology.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary" id="heroViewProjectsBtn">
+                            <span>View My Projects</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <a href="assets/Aditya_Kumar_Resume.pdf" download="Aditya_Kumar_Resume.pdf" class="btn btn-secondary" id="heroDownloadResumeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" id="heroGithubLink" aria-label="GitHub Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" id="heroLinkedinLink" aria-label="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="mailto:adityakumar.dev@example.com" class="social-icon-btn" id="heroEmailLink" aria-label="Send Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side Interactive Code Visual -->
+                <div class="hero-visual">
+                    <div class="code-window glass-card">
+                        <div class="code-header">
+                            <div class="window-controls">
+                                <span class="control-dot close"></span>
+                                <span class="control-dot minimize"></span>
+                                <span class="control-dot expand"></span>
+                            </div>
+                            <div class="code-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                                aditya.profile.js
+                            </div>
+                            <div class="code-status">JS (ES6+)</div>
+                        </div>
+                        <div class="code-body">
+                            <pre><code id="typedCode"><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Aditya Kumar"</span>,
+  degree: <span class="code-string">"BCA Student"</span>,
+  college: <span class="code-string">"Amritsar Group of Colleges"</span>,
+  focus: [<span class="code-string">"Web Development"</span>, <span class="code-string">"Software Engineering"</span>],
+  skills: [<span class="code-string">"C++"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"MySQL"</span>],
+  passionate: <span class="code-boolean">true</span>,
+  status: <span class="code-string">"Ready to innovate & contribute"</span>
+};
+
+<span class="code-comment">// Executing developer goals...</span>
+developer.buildFuture();</code></pre>
+                        </div>
+                        <div class="code-footer">
+                            <span class="status-indicator"></span> UTF-8 &nbsp;&nbsp; Ln 11, Col 28 &nbsp;&nbsp; 0 Errors
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+                <span class="scroll-text">Scroll Down</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+        </section>
+
+        <!-- 4. ABOUT ME SECTION -->
+        <section id="about" class="section-padding about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">GET TO KNOW ME</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Professional Profile Card -->
+                    <div class="profile-card glass-card">
+                        <div class="profile-avatar-wrapper">
+                            <img src="assets/images/aditya-kumar.jpg" alt="Aditya Kumar Profile Photo" class="profile-avatar-img">
+                        </div>
+                        <h3 class="profile-name">Aditya Kumar</h3>
+                        <p class="profile-role">BCA Student / Aspiring Developer</p>
+                        
+                        <div class="profile-details-list">
+                            <div class="detail-item">
+                                <span class="detail-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Location:
+                                </span>
+                                <span class="detail-value">India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                    Education:
+                                </span>
+                                <span class="detail-value">BCA (Amritsar Group of Colleges)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                    Primary Focus:
+                                </span>
+                                <span class="detail-value">Web &amp; Software Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Narrative & Highlights Stats Grid -->
+                    <div class="about-narrative">
+                        <p class="about-lead">
+                            I am a BCA student with a strong interest in software development, web technologies, programming, databases, and cybersecurity. I enjoy creating practical projects that help me strengthen my technical skills and understand real-world development workflows.
+                        </p>
+                        <p class="about-body">
+                            My journey in technology is driven by continuous learning and hands-on experimentation. From writing clean C++ console applications to building interactive web applications, I focus on logical problem-solving, clean code structure, and intuitive user experiences.
+                        </p>
+
+                        <!-- Highlights Stats Cards -->
+                        <div class="stats-grid">
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h4 class="stat-title">BCA Degree</h4>
+                                    <p class="stat-desc">Amritsar Group of Colleges</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 4 4-4 4"/><line x1="14" x2="15" y1="16" y2="16"/></svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h4 class="stat-title">Multiple Projects</h4>
+                                    <p class="stat-desc">Web Apps &amp; C++ Systems</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h4 class="stat-title">Core Languages</h4>
+                                    <p class="stat-desc">C, C++, Python, JavaScript</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass-card">
+                                <div class="stat-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h4 class="stat-title">Web Technologies</h4>
+                                    <p class="stat-desc">HTML5, CSS3, React, SQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SKILLS SECTION -->
+        <section id="skills" class="section-padding bg-alt-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">TECHNICAL PROFICIENCY</span>
+                    <h2 class="section-title">Skills &amp; Competencies</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-categories-grid">
+                    <!-- Category 1: Programming -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <h3 class="category-title">Programming</h3>
+                        </div>
+                        <div class="skills-badge-wrap">
+                            <div class="skill-badge"><span class="badge-dot"></span> C</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> C++</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> Python</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> JavaScript</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Web Development -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon purple">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            </div>
+                            <h3 class="category-title">Web Development</h3>
+                        </div>
+                        <div class="skills-badge-wrap">
+                            <div class="skill-badge"><span class="badge-dot"></span> HTML5</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> CSS3</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> Bootstrap</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> JavaScript</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> React.js</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Database -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon emerald">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                            <h3 class="category-title">Database</h3>
+                        </div>
+                        <div class="skills-badge-wrap">
+                            <div class="skill-badge"><span class="badge-dot"></span> MySQL</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> DBMS</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> SQL</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> PL/SQL</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Tools & Technologies -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="category-icon amber">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            </div>
+                            <h3 class="category-title">Tools &amp; Technologies</h3>
+                        </div>
+                        <div class="skills-badge-wrap">
+                            <div class="skill-badge"><span class="badge-dot"></span> Git</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> GitHub</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> VS Code</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> Microsoft Excel</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> PowerPoint</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> Photoshop</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> CorelDRAW</div>
+                            <div class="skill-badge"><span class="badge-dot"></span> Canva</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PROJECTS SECTION -->
+        <section id="projects" class="section-padding projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">MY WORK</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Project Filter Buttons -->
+                <div class="project-filter-buttons">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                    <button class="filter-btn" data-filter="web" id="filter-web">Web</button>
+                    <button class="filter-btn" data-filter="javascript" id="filter-javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="cpp" id="filter-cpp">C++</button>
+                </div>
+
+                <!-- Project Cards Container Grid -->
+                <div class="projects-grid" id="projectsContainer">
+                    
+                    <!-- Project 1: Weather Application -->
+                    <article class="project-card glass-card" data-category="web javascript">
+                        <div class="project-image-wrap">
+                            <img src="assets/images/weather-app.jpg" alt="Weather Application UI" loading="lazy" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category-tag">Web / JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Application</h3>
+                            <p class="project-description">
+                                A responsive weather application designed to display weather information through a clean and user-friendly interface.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    Code
+                                </a>
+                                <a href="#" class="btn-icon-link live-demo-btn" title="Live Preview">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                                    Live Demo
+                                </a>
+                                <button class="btn-details view-details-btn" data-project="weather" title="View Details">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Personal Portfolio Website -->
+                    <article class="project-card glass-card" data-category="web javascript">
+                        <div class="project-image-wrap">
+                            <img src="assets/images/portfolio-site.jpg" alt="Personal Portfolio Website UI" loading="lazy" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category-tag">Web / JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A responsive personal portfolio website showcasing skills, projects, education, and professional information.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    Code
+                                </a>
+                                <a href="#home" class="btn-icon-link live-demo-btn" title="Live Preview">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                                    Live Demo
+                                </a>
+                                <button class="btn-details view-details-btn" data-project="portfolio" title="View Details">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Amazon Clone -->
+                    <article class="project-card glass-card" data-category="web">
+                        <div class="project-image-wrap">
+                            <img src="assets/images/amazon-clone.jpg" alt="Amazon Clone Interface" loading="lazy" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category-tag">Web Development</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Amazon Clone</h3>
+                            <p class="project-description">
+                                A frontend e-commerce interface inspired by modern online shopping platforms.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    Code
+                                </a>
+                                <a href="#" class="btn-icon-link live-demo-btn" title="Live Preview">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                                    Live Demo
+                                </a>
+                                <button class="btn-details view-details-btn" data-project="amazon" title="View Details">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Bank Management System -->
+                    <article class="project-card glass-card" data-category="cpp">
+                        <div class="project-image-wrap">
+                            <img src="assets/images/bank-system.jpg" alt="Bank Management System Interface" loading="lazy" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category-tag">C++ System Application</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bank Management System</h3>
+                            <p class="project-description">
+                                A console-based banking management application implementing basic banking operations.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">File Handling</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    Code
+                                </a>
+                                <button class="btn-details view-details-btn" data-project="bank" title="View Details">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Hostel Management System -->
+                    <article class="project-card glass-card" data-category="cpp">
+                        <div class="project-image-wrap">
+                            <img src="assets/images/hostel-system.jpg" alt="Hostel Management System Interface" loading="lazy" class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category-tag">C++ System Application</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Hostel Management System</h3>
+                            <p class="project-description">
+                                A console-based application designed to manage hostel-related records and operations.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Data Management</span>
+                                <span class="tech-tag">CLI</span>
+                            </div>
+                            <div class="project-card-footer">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-icon-link" title="GitHub Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    Code
+                                </a>
+                                <button class="btn-details view-details-btn" data-project="hostel" title="View Details">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. EDUCATION SECTION -->
+        <section id="education" class="section-padding bg-alt-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">ACADEMIC JOURNEY</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1: BCA -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-period current">Present / In-Progress</span>
+                            <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+                            <p class="timeline-institution">Amritsar Group of Colleges</p>
+                            <p class="timeline-desc">
+                                Pursuing undergraduate degree focused on software development, computer fundamentals, database management, web applications, and programming principles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: 12th -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-period">2024</span>
+                            <h3 class="timeline-degree">Higher Secondary Education (12th)</h3>
+                            <p class="timeline-institution">Senior Secondary School</p>
+                            <p class="timeline-desc">
+                                Completed Senior Secondary examination with focus on core academics and computer literacy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: 10th -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 9-5-9-5-9 5 9 5z"/><path d="M12 14v7"/><path d="M5 11.5v5.5l7 3.5 7-3.5v-5.5"/></svg>
+                        </div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-period">2020</span>
+                            <h3 class="timeline-degree">Secondary School Examination (10th)</h3>
+                            <p class="timeline-institution">High School</p>
+                            <p class="timeline-desc">
+                                Completed matriculation foundation, establishing strong analytical and logical reasoning skills.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CERTIFICATIONS & LEARNING SECTION -->
+        <section id="certifications" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">CONTINUOUS LEARNING</span>
+                    <h2 class="section-title">Certifications &amp; Learning</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Web Development Fundamentals</h3>
+                            <p class="cert-meta">HTML5, CSS3, JavaScript &amp; Modern UI Building</p>
+                            <span class="cert-status-badge">Certificate details available on request</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 4 4-4 4"/></svg>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">C++ Programming &amp; Data Structures</h3>
+                            <p class="cert-meta">Object Oriented Programming &amp; Logic Design</p>
+                            <span class="cert-status-badge">Certificate details available on request</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Database Management Systems (DBMS)</h3>
+                            <p class="cert-meta">Relational Databases, MySQL &amp; SQL Querying</p>
+                            <span class="cert-status-badge">Certificate details available on request</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. ACTIVITIES & RESPONSIBILITIES -->
+        <section id="responsibilities" class="section-padding bg-alt-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">LEADERSHIP &amp; INVOLVEMENT</span>
+                    <h2 class="section-title">Activities &amp; Responsibilities</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="responsibilities-wrapper max-w-700">
+                    <div class="responsibility-card glass-card">
+                        <div class="resp-header">
+                            <div class="resp-badge-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="resp-title">Placement Committee / Placement Cell</h3>
+                                <p class="resp-subtitle">College Student Representative &amp; Coordinator</p>
+                            </div>
+                        </div>
+                        <p class="resp-body">
+                            Actively serving as a student member of the college Placement Committee. Assisting in organizing campus recruitment drives, coordinating communication between student candidates and visiting tech companies, and supporting placement orientation sessions.
+                        </p>
+                        <div class="resp-tags">
+                            <span class="resp-tag">Team Leadership</span>
+                            <span class="resp-tag">Event Coordination</span>
+                            <span class="resp-tag">Professional Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. RESUME SECTION -->
+        <section id="resume" class="section-padding resume-cta-section">
+            <div class="container">
+                <div class="resume-cta-card glass-card text-center">
+                    <div class="resume-icon-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                    </div>
+                    <h2 class="resume-heading">Want to know more about my experience?</h2>
+                    <p class="resume-subheading">
+                        Download my resume to explore my education, technical skills, projects, and professional profile.
+                    </p>
+                    <div class="resume-cta-buttons">
+                        <a href="assets/Aditya_Kumar_Resume.pdf" download="Aditya_Kumar_Resume.pdf" class="btn btn-primary" id="downloadResumeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                            <span>Download Resume</span>
+                        </a>
+                        <button class="btn btn-secondary" id="viewResumeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                            <span>View Resume</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. CONTACT SECTION -->
+        <section id="contact" class="section-padding bg-alt-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-lead">
+                        Have a project, internship opportunity, or professional opportunity? Feel free to get in touch.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Cards -->
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card glass-card">
+                            <div class="contact-icon email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:adityakumar.dev@example.com" class="info-value" id="contactEmailDisplay">adityakumar.dev@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="contact-icon linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="info-label">LinkedIn</span>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="info-value" id="contactLinkedinDisplay">linkedin.com/in/adityakumar</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card glass-card">
+                            <div class="contact-icon github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            </div>
+                            <div class="contact-info-text">
+                                <span class="info-label">GitHub</span>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="info-value" id="contactGithubDisplay">github.com/adityakumar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="John Doe" required>
+                                <span class="error-msg" id="fullNameError">Please enter your full name.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required-star">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject <span class="required-star">*</span></label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Opportunity / Project Inquiry" required>
+                                <span class="error-msg" id="subjectError">Please enter a subject.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message <span class="required-star">*</span></label>
+                                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="messageError">Please enter your message (min 10 characters).</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 12. FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">ADITYA</a>
+                    <p class="footer-quote">"Building, learning and growing through technology."</p>
+                </div>
+
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-btn" id="footerGithub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-btn" id="footerLinkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:adityakumar.dev@example.com" aria-label="Email" class="footer-social-btn" id="footerEmail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Aditya Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-card glass-card">
+            <button class="modal-close-btn" id="closeProjectModal" aria-label="Close modal">&times;</button>
+            <div id="modalContent">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUME PREVIEW MODAL -->
+    <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-card modal-lg glass-card">
+            <div class="modal-header">
+                <h3>Aditya Kumar - Resume Preview</h3>
+                <button class="modal-close-btn" id="closeResumeModal" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body-pdf">
+                <iframe src="assets/Aditya_Kumar_Resume.pdf" title="Resume PDF Preview" class="pdf-frame"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a href="assets/Aditya_Kumar_Resume.pdf" download="Aditya_Kumar_Resume.pdf" class="btn btn-primary">Download PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-notification" id="toastNotification">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Action completed successfully!</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
